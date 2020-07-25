@@ -1,0 +1,15 @@
+  /* End Site Navigation */
+  .content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+  }
+  
+  .main-area {
+    width: 100%;
+    min-height: 600px;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  
+  
