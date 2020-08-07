@@ -44,6 +44,11 @@ header {
   background-color: #e5e9dc;
 }
 
+.activeStyle{
+  background-color: #e5e9dc;
+}
+
+
 
 .site-nav NavLink {
   display: block;

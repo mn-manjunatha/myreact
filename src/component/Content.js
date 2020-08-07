@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import GraceryList from './GraceryList'
-import About from './About'
+import GraceryListContainer from './gracery/GraceryListContainer';
+import Gallary from './galarry/Gallary';
+import FormInput from './FormInput';
+import About from './About';
+
 import './Content.css';
 import {
     BrowserRouter as Router,
@@ -13,17 +16,17 @@ class Content extends Component {
     render() {
         return (
             <>
-                
-            <div className="content-area group">
-            <div className="main-area">
-                <Switch>
-                    <Route exact strict path="/home" component={GraceryList} />
-                    <Route exact strict path="/gracery" component={GraceryList} />
-                    <Route exact strict path="/about" component={About} />
-                </Switch>
-            </div>
-          </div>
-          </>
+                <div className="content-area group">
+                    <div className="main-area">
+                        <Switch>
+                            <Route exact strict path="/" component={Gallary} />
+                            <Route exact strict path="/gracery" component={GraceryListContainer} />
+                            <Route exact strict path="/about" component={About} />
+                            <Route exact strict path="/forminput" component={FormInput} />
+                        </Switch>
+                    </div>
+                </div>
+            </>
         );
     }
 }

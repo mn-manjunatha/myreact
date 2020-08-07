@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './HeaderComponent.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class HeaderComponent extends Component {
     render() {
@@ -8,13 +8,12 @@ class HeaderComponent extends Component {
             <header>
                 <h1>Website Title</h1>
                 <p>Website slogan included here.</p>
-
                 <nav className="site-nav">
                     <ul className="group">
-                        <li><NavLink to='/home' exact activeStyle={{ color: '#a832a6' }}>Home</NavLink></li>
-                        <li><NavLink to='/gracery' exact activeStyle={{ color: '#a832a6' }}>Gracery</NavLink></li>
-                        <li><NavLink to='/about' exact activeStyle={{ color: '#a832a6' }}>About</NavLink></li>
-                        <li><NavLink to='/userProfile' exact activeStyle={{ color: '#a832a6' }}>Contact Us</NavLink></li>
+                        <li><NavLink to='/' exact activeStyle={{ backgroundColor: '#e5e9dc' }}>Gallary</NavLink></li>
+                        <li><NavLink to='/gracery' exact activeStyle={{  backgroundColor: '#e5e9dc'}}>Gracery</NavLink></li>
+                        <li><NavLink to='/about' exact activeStyle={{  backgroundColor: '#e5e9dc' }}>About</NavLink></li>
+                        <li><NavLink to='/forminput' exact activeStyle={{  backgroundColor: '#e5e9dc' }}>Form Input</NavLink></li>
                     </ul>
                 </nav>
             </header>

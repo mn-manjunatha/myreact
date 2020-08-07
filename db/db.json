@@ -1,0 +1,30 @@
+{
+  "galary":[
+    {"id":"1", "type":"photo","src":"https://source.unsplash.com/2ShvY8Lf6l0/800x599"},
+    {"id":"2", "type":"photo","src":"https://source.unsplash.com/Dm-qxdynoEc/800x799"},
+    {"id":"3", "type":"photo","src":"https://source.unsplash.com/qDkso9nvCg0/600x799"},
+    {"id":"4", "type":"photo","src":"https://source.unsplash.com/iecJiKe_RNg/600x799"},
+    {"id":"5", "type":"photo","src":"https://source.unsplash.com/epcsn8Ed8kY/600x799"},
+    {"id":"6", "type":"photo","src":"https://source.unsplash.com/NQSWvyVRIJk/800x599"},
+    {"id":"7", "type":"photo","src":"https://source.unsplash.com/zh7GEuORbUw/600x799"},
+    {"id":"8", "type":"photo","src":"https://source.unsplash.com/PpOHJezOalU/800x599"},
+    {"id":"9", "type":"photo","src":"https://source.unsplash.com/I1ASdgphUH4/800x599"}
+  ],
+    "gracery":[
+      { "id": 1, "itemName": "Oranges", "quantity":5, "price": 3.00 },
+      { "id": 2, "itemName": "Celery", "quantity":2, "price": 2.50 },
+      { "id": 3, "itemName": "Garlic", "quantity":2, "price": 1.90 },
+      { "id": 4, "itemName": "Bananas", "quantity":6, "price": 2.99 },
+      { "id": 5, "itemName": "Onions", "quantity":4, "price": 3.00 },
+      { "id": 6, "itemName": "Very long awkwardly named yet still delicious item here", "quantity":4, "price": 3.00 },
+      { "id": 7, "itemName": "Carrots", "quantity":12, "price": 2.99 }
+    ],
+
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
