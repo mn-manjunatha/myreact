@@ -1,3 +1,19 @@
+.add-gracery{
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #798a56;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.add-gracery:hover{
+    cursor: pointer;
+    border: 1px solid #535e3b;
+    background-color: #798a56;
+}
 
   /*Table Style*/
   table{

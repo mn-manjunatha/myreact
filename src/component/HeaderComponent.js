@@ -11,7 +11,7 @@ class HeaderComponent extends Component {
                 <nav className="site-nav">
                     <ul className="group">
                         <li><NavLink to='/' exact activeStyle={{ backgroundColor: '#e5e9dc' }}>Gallary</NavLink></li>
-                        <li><NavLink to='/gracery' exact activeStyle={{  backgroundColor: '#e5e9dc'}}>Gracery</NavLink></li>
+                        <li><NavLink to='/groceries' exact activeStyle={{  backgroundColor: '#e5e9dc'}}>Groceries</NavLink></li>
                         <li><NavLink to='/about' exact activeStyle={{  backgroundColor: '#e5e9dc' }}>About</NavLink></li>
                         <li><NavLink to='/forminput' exact activeStyle={{  backgroundColor: '#e5e9dc' }}>Form Input</NavLink></li>
                     </ul>

@@ -33,7 +33,10 @@ class GraceryList extends Component {
   renderRows() {
      if(this.props.loadingGracery)
      {
-       return ( <td colspan="3">Loading...</td>)
+       return (<tr>
+          <td colSpan="3">Loading...</td>
+          </tr>
+        )
      }
      else if (this.props.graceryList && this.props.graceryList.length > 0) {
       const graceryListInfo = this.props.graceryList.map((props, i) => ( 
@@ -48,7 +51,9 @@ class GraceryList extends Component {
      } else if(this.props.graceryList && this.props.graceryList.length === 0){
 
       return (
-        <td colspan="3">No record found</td>
+        <tr>
+        <td colSpan="3">No record found</td>
+        </tr>
       )
      }
   }
@@ -83,7 +88,7 @@ class GraceryList extends Component {
       <>
         <h2>Main Column Heading</h2>
         <p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
-
+        <button className="add-gracery">Add Gracery</button>
         {this.loadGraceryList()}
 
 

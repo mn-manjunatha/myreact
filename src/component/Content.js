@@ -20,6 +20,7 @@ class Content extends Component {
                     <div className="main-area">
                         <Switch>
                             <Route exact strict path="/" component={Gallary} />
+                            <Route exact strict path="/groceries" component={GraceryListContainer} />
                             <Route exact strict path="/gracery" component={GraceryListContainer} />
                             <Route exact strict path="/about" component={About} />
                             <Route exact strict path="/forminput" component={FormInput} />
