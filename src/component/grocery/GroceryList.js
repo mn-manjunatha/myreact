@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './GraceryList.css';
+import './GroceryList.css';
 import {DEFAULT_PAGE, PAGE_SIZE} from '../../constants/constants';
 
-class GraceryList extends Component {
+class GroceryList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -31,15 +31,15 @@ class GraceryList extends Component {
   }
 
   renderRows() {
-     if(this.props.loadingGracery)
+     if(this.props.loadingGrocery)
      {
        return (<tr>
           <td colSpan="3">Loading...</td>
           </tr>
         )
      }
-     else if (this.props.graceryList && this.props.graceryList.length > 0) {
-      const graceryListInfo = this.props.graceryList.map((props, i) => ( 
+     else if (this.props.groceryList && this.props.groceryList.length > 0) {
+      const groceryListInfo = this.props.groceryList.map((props, i) => ( 
         <tr key={props.id}>
                   <td>{props.itemName}</td>
                   <td>{props.quantity}</td>
@@ -47,8 +47,8 @@ class GraceryList extends Component {
                 </tr>
         ));
 
-      return graceryListInfo;
-     } else if(this.props.graceryList && this.props.graceryList.length === 0){
+      return groceryListInfo;
+     } else if(this.props.groceryList && this.props.groceryList.length === 0){
 
       return (
         <tr>
@@ -59,16 +59,16 @@ class GraceryList extends Component {
   }
 
    /**
-   * This function renders gracery list
-   * @function loadGraceryList
+   * This function renders grocery list
+   * @function loadGroceryList
    * @returns {element} This function returns react element.
-   * @memberof GraceryList
+   * @memberof GroceryList
   */
-  loadGraceryList() {
+  loadGroceryList() {
     return (
     <div>
         {/* <div>{pageBusyIndicator}</div> */}
-        <table className="gracery-list" >
+        <table className="grocery-list" >
           <thead>
               <tr>
                 <th className="col-item-name">Item Name</th>
@@ -88,12 +88,12 @@ class GraceryList extends Component {
       <>
         <h2>Main Column Heading</h2>
         <p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
-        <button className="add-gracery">Add Gracery</button>
-        {this.loadGraceryList()}
+        <button className="add-grocery">Add Grocery</button>
+        {this.loadGroceryList()}
 
 
         {/* {Array.isArray(this.state.Items) && this.state.Items.length > 0 ?
-          <table className="gracery-list" >
+          <table className="grocery-list" >
             <thead>
               <tr>
                 <th className="col-item-name">Item Name</th>
@@ -123,4 +123,4 @@ class GraceryList extends Component {
     );
   }
 }
-export default GraceryList;
+export default GroceryList;

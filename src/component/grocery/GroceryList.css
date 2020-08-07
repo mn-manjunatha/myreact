@@ -1,4 +1,4 @@
-.add-gracery{
+.add-grocery{
     display: block;
     box-sizing: border-box;
     background-color: #869960;
@@ -9,7 +9,7 @@
     outline: none;
     margin-bottom: 10px;
 }
-.add-gracery:hover{
+.add-grocery:hover{
     cursor: pointer;
     border: 1px solid #535e3b;
     background-color: #798a56;
@@ -49,8 +49,8 @@
     background-color: #e5e9dc;
   }
   
-  table.gracery-list tr :nth-child(2),
-  table.gracery-list tr :nth-child(3){
+  table.grocery-list tr :nth-child(2),
+  table.grocery-list tr :nth-child(3){
     text-align: center;
   }
   
