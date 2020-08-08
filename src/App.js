@@ -1,20 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HeaderComponent from './component/HeaderComponent';
 import Content from './component/Content';
 import { Provider } from "react-redux";
 import store from "./redux/store"
 import {
-  BrowserRouter as Router,
+ Router ,
 } from "react-router-dom";
+import { createBrowserHistory } from "history"
 
+export const history = createBrowserHistory()
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Router >
+        <Router history={history}>
           <HeaderComponent />
           <Provider store={store}>
             <Content />

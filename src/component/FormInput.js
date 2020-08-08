@@ -8,9 +8,9 @@ class FormInput extends Component {
                 <h2>Main Column Heading</h2>
                 <p>This is the main area (or column). Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
                 <form>
-                    <label for="email" className="hidden-label">Email</label>
+                    <label htmlFor="email" className="hidden-label">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email" />
-                    <label for="password" className="hidden-label">Password</label>
+                    <label htmlFor="password" className="hidden-label">Password</label>
                     <input type="password" name="password" id="password" placeholder="Password" />
                     <select>
                         <option>Initially view...</option>
